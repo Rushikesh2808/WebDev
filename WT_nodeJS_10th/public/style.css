@@ -1,0 +1,55 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #2196f3;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Navigation */
+nav {
+    background: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #2196f3;
+}
+
+/* Content */
+.container {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Form */
+input,
+textarea {
+    width: 250px;
+    padding: 8px;
+}
+
+button {
+    padding: 8px 15px;
+    background: #2196f3;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background: #1976d2;
+}

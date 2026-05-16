@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Online Food Ordering System</h1>
+
+    <form onsubmit="placeOrder(event)">
+
+        <h3>Select Food Items</h3>
+
+        <label><input type="checkbox" value="Pizza" data-price="200"> Pizza (₹200)</label><br>
+        <label><input type="checkbox" value="Burger" data-price="100"> Burger (₹100)</label><br>
+        <label><input type="checkbox" value="Pasta" data-price="150"> Pasta (₹150)</label><br>
+        <label><input type="checkbox" value="Cold Drink" data-price="50"> Cold Drink (₹50)</label><br>
+        <label><input type="checkbox" value="Sandwich" data-price="90"> Sandwich (₹90)</label><br><br>
+
+        <button type="submit">Place Order</button>
+
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

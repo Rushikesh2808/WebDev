@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f1f5f9;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+h1 {
+    background: #6366f1;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Form */
+.form-box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+input,
+select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #6366f1;
+}
+
+/* Button */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #6366f1;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #4f46e5;
+}
+
+/* Table */
+table {
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+th {
+    background: #6366f1;
+    color: white;
+}
+
+td,
+th {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+/* Status */
+.completed {
+    background: #22c55e;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.pending {
+    background: #f59e0b;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* Buttons */
+.edit-btn {
+    background: #3b82f6;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.delete-btn {
+    background: #ef4444;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}

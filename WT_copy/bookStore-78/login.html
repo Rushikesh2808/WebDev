@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Login</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </nav>
+
+    <div class="container">
+
+        <form class="form-box" onsubmit="loginUser(event)">
+
+            <h2>User Login</h2>
+
+            <label>Username</label>
+            <input type="text" id="loginUser" required>
+
+            <label>Password</label>
+            <input type="password" id="loginPass" required>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

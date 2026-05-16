@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Top Bar */
+.top-bar{
+    background:#002147;
+    color:white;
+    text-align:center;
+    padding:8px;
+    font-size:14px;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#003366;
+    padding:10px 40px;
+}
+
+.logo h2{
+    color:white;
+}
+
+/* Menu */
+.menu{
+    list-style:none;
+    display:flex;
+}
+
+.menu li{
+    position:relative;
+}
+
+.menu li a{
+    color:white;
+    text-decoration:none;
+    padding:12px 18px;
+    display:block;
+}
+
+.menu li a:hover{
+    background:#00509e;
+}
+
+/* Dropdown */
+.dropdown{
+    display:none;
+    position:absolute;
+    background:#004080;
+    top:100%;
+    left:0;
+    min-width:200px;
+    list-style:none;
+}
+
+.dropdown li a{
+    padding:10px;
+}
+
+.menu li:hover .dropdown{
+    display:block;
+}
+
+/* Sub Dropdown */
+.dropdown-item{
+    position:relative;
+}
+
+.sub-dropdown{
+    display:none;
+    position:absolute;
+    left:100%;
+    top:0;
+    background:#003366;
+    min-width:200px;
+    list-style:none;
+}
+
+.dropdown-item:hover .sub-dropdown{
+    display:block;
+}
+
+/* Hero Section */
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1588072432836-e10032774350');
+    background-size:cover;
+    background-position:center;
+    height:350px;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero button{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    background:#ff9800;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.hero button:hover{
+    background:#e68900;
+}
+
+/* Content Section */
+.content{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:40px;
+}
+
+.box{
+    background:white;
+    padding:20px;
+    width:250px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer{
+    background:#002147;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+    }
+
+    .menu{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .content{
+        flex-direction:column;
+        align-items:center;
+    }
+}
