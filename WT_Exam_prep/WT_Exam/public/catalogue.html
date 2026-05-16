@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Catalogue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="catalogue-page">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">SmartPortal</div>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="order.html">Order</a></li>
+
+            <li class="dropdown">
+                <a href="#">Services ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </li>
+
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="catalogue-box">
+        <h2>Book Catalogue</h2>
+
+        <table border="1">
+            <tr>
+                <th>Book</th>
+                <th>Author</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>HTML & CSS</td>
+                <td>Jon Duckett</td>
+                <td>₹450</td>
+                <td><button onclick="addToCart('HTML & CSS', 450)">Add to Cart</button></td>
+            </tr>
+
+            <tr>
+                <td>Java Programming</td>
+                <td>James Gosling</td>
+                <td>₹500</td>
+                <td><button onclick="addToCart('Java Programming', 500)">Add to Cart</button></td>
+            </tr>
+
+            <tr>
+                <td>Python Basics</td>
+                <td>Guido van Rossum</td>
+                <td>₹400</td>
+                <td><button onclick="addToCart('Python Basics', 400)">Add to Cart</button></td>
+            </tr>
+
+            <tr>
+                <td>Database Systems</td>
+                <td>Elmasri</td>
+                <td>₹550</td>
+                <td><button onclick="addToCart('Database Systems', 550)">Add to Cart</button></td>
+            </tr>
+
+        </table>
+        <br><br>
+        <button onclick="placeOrder()">Place Order</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

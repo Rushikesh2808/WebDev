@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+
+      <button type="button" class="btn-outline"><span></span>Main Course</button>
+      <a href="cart.html" class="btn-cart" style="margin:20px;">Go to Cart 🛒</a>
+
+    <div class="container">
+          <div class="row1 ">
+            <div class="card" style="width: 18rem;">
+              <img src="pav bhaji.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pav Bhaji</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a class="btn btn-primary" onclick="addToCart('Pav Bhaji',110,'pav bhaji.jpg')">Add to Cart - ₹110</a>
+              </div>
+            </div>
+         </div>
+        
+        <div class="row1 ">
+          <div class="card" style="width: 18rem;">
+            <img src="panner.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Panner Masala</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a class="btn btn-primary" onclick="addToCart('Paneer Masala',210,'panner.jpg')">Add to Cart - ₹210</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row1 ">
+          <div class="card" style="width: 18rem;">
+            <img src="idli.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Idli</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a class="btn btn-primary" onclick="addToCart('Idli',70,'idli.jpg')">Add to Cart - ₹70</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row1 ">
+          <div class="card" style="width: 18rem;">
+            <img src="misal pav.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Misal Pav</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a class="btn btn-primary" onclick="addToCart('Misal Pav',110,'misal pav.jpg')">Add to Cart - ₹110</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="read">
+        <a>Read More...</a>
+      </div>
+
+      <button type="button" class="btn-outline"><span></span>Appetizers</button>
+      <div class="container2">
+        <div class="row1 ">
+          <div class="card" style="width: 18rem;">
+            <img src="sandwich.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sandwich</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a class="btn btn-primary" onclick="addToCart('Sandwich',115,'sandwich.jpg')">Add to Cart - ₹115</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row1 ">
+          <div class="card" style="width: 18rem;">
+            <img src="french fries.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">French Fries</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a class="btn btn-primary" onclick="addToCart('French Fries',130,'french fries.jpg')">Add to Cart - ₹130</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row1 ">
+          <div class="card" style="width: 18rem;">
+            <img src="juicies.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Juices</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a class="btn btn-primary" onclick="addToCart('Juices',60,'juicies.jpg')">Add to Cart - ₹60</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row1 ">
+          <div class="card" style="width: 18rem;">
+            <img src="ice cream.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ice Cream</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a class="btn btn-primary" onclick="addToCart('Ice Cream',100,'ice cream.jpg')">Add to Cart - ₹100</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <button type="button" class="btn-outline1"><span></span>Read More...</button> -->
+       <a class="read">Read More...</a>
+<script>
+function addToCart(name, price){
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    cart.push({
+        name: name,
+        price: price
+    });
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert(name + " added to cart ✅");
+}
+</script>
+    
+  </body>
+</html>

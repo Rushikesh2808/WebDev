@@ -1,0 +1,9 @@
+node_modules/
+.vscode/
+
+*.zip
+*.pdf
+*.docx
+
+.DS_Store
+Thumbs.db

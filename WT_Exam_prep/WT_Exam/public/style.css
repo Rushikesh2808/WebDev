@@ -1,0 +1,259 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* PAGE BACKGROUNDS */
+.home-page {
+    background: #f4f4f4;
+}
+
+.login-page,
+.register-page {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+}
+
+.catalogue-page,
+.dashboard-page {
+    background: #ffffff;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #1e1e2f;
+    padding: 10px 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background: white;
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px;
+    color: black;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    color: white;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    flex: 1;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.form-box {
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-box input {
+    width: 95%;
+    padding: 12px;
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 12px;
+    background: #4e54c8;
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+
+/* TABLE */
+.catalogue-box {
+    width: 60%;
+    margin: 60px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #d9dfe2;
+    text-align: center;
+}
+
+.catalogue-box table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.catalogue-box th {
+    background: #4e54c8;
+    color: white;
+    padding: 12px;
+}
+
+.catalogue-box td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.catalogue-box tr:hover {
+    background: #9ac4e3;
+}
+
+
+.order-box {
+    width: 400px;
+    margin: 60px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.order-box h2 {
+    text-align: center;
+}
+
+.order-box label {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.order-box button {
+    width: 100%;
+    padding: 10px;
+    background: #4e54c8;
+    color: white;
+    border: none;
+}
+
+.order-box textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: black;
+    color: white;
+}
+
+/* DASHBOARD BOX */
+.dashboard-box {
+    width: 400px;
+    margin: 60px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    text-align: center;
+}
+
+/* INPUT */
+.dashboard-box input {
+    width: 70%;
+    padding: 10px;
+}
+
+/* BUTTON */
+.dashboard-box button {
+    padding: 10px;
+    background: #4e54c8;
+    color: white;
+    border: none;
+}
+
+/* LIST */
+.dashboard-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.dashboard-box li {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* FORM HEADING */
+.form-box h2 {
+    margin-bottom: 15px;
+}
+
+/* INPUT FOCUS EFFECT */
+.form-box input:focus {
+    outline: none;
+    border: 1px solid #4e54c8;
+}
+
+/* BUTTON HOVER */
+.form-box button:hover {
+    background: #3b40a0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .catalogue-box {
+        width: 95%;
+    }
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}

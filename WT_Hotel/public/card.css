@@ -1,0 +1,85 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    margin-top: 30px;
+}
+
+.card-img-top{
+    height: 200px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.card{
+    margin-top: 15px;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 1300px;
+    margin-left: 110px;
+    /* margin-left: 140px;;
+    margin-right: -80px; */
+}
+
+/* .container2 .card{
+    margin-left: -220px;
+} */
+
+
+.read{
+    margin-top: 10px;
+    margin-left: 150px;
+    color: #ec6c10;
+
+}
+
+/* button */
+.btn-outline{
+    border-radius: 25px;
+    width: 150px;
+    padding: 8px 0px;
+    text-align: center;
+    border: 2px solid #ec6c10;
+    background-color: #ec6c10;
+    color: white;
+    box-shadow: 9px 9px 12px #f1a975 ;
+    position: relative;
+    margin-left: 690px;
+    margin-top: 30px;
+}
+
+.btn-cart{
+    border-radius: 25px;
+    width: 150px;
+    padding: 8px 0px;
+    text-align: center;
+    border: 2px solid #ec6c10;
+    background-color: #ec6c10;
+    color: white;
+    box-shadow: 9px 9px 12px #f1a975 ;
+    position: absolute;
+    left: 120px;
+    top: 10px;
+    text-decoration: none;
+}
+
+a.btn.btn-primary {
+    background-color: #ec6c10d7;
+    border-color: #ec6c10;
+}
+
+a.btn.btn-primary:hover{
+    background-color: #ec6c10;
+    border-color: #ec6c10;
+    box-shadow:9px 9px 12px #f1a975;
+}

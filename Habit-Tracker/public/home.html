@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HabitFlow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <h3 class="logo">✔</h3>
+
+            <ul>
+                <li class="active">🏠 Habits</li>
+                <li>📅 Tasks</li>
+                <li>📊 Stats</li>
+                <li>⚙ Settings</li>
+            </ul>
+
+        </div>
+
+        <!-- MAIN -->
+        <div class="main">
+
+            <div class="topbar">
+                <button class="today-btn" onclick="goToToday()">Today</button>
+                <p class="tagline">Build better habits daily 🚀</p>
+                <div class="profile">👤</div>
+            </div>
+
+            <div class="dates" id="datesContainer"></div>
+
+            <!-- Progress -->
+            <div class="card">
+                <p>Progress <span id="percent">0%</span></p>
+                <div class="progress-bar">
+                    <div id="progressFill"></div>
+                </div>
+            </div>
+
+            <!-- Habits -->
+            <div id="habitList"></div>
+
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="right">
+            <div class="card">
+                <p>🔥 Completed</p>
+                <h2 id="completedCount">0</h2>
+            </div>
+
+            <div class="card quote">
+                <p>"Small steps every day."</p>
+            </div>
+            <div class="mini-calendar">
+                <h6>This Month</h6>
+                <div id="calendarGrid"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FLOAT BUTTON -->
+    <button class="fab" onclick="openModal()">+</button>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+        <div class="modal-box">
+
+            <h4>Add Habit</h4>
+
+            <label>Habit Name</label>
+            <input id="habitName">
+
+            <label>Category</label>
+            <select id="category">
+                <option>Health</option>
+                <option>Study</option>
+                <option>Work</option>
+            </select>
+
+            <label>Evaluation</label>
+            <select id="evalType">
+                <option>Yes/No</option>
+                <option>Numeric</option>
+            </select>
+
+            <button class="btn btn-primary w-100 mt-2" onclick="saveHabit()">Save</button>
+
+        </div>
+    </div>
+
+    <script src="js/home.js"></script>
+</body>
+
+</html>

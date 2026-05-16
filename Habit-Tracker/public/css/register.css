@@ -1,0 +1,57 @@
+body {
+    background: #f8fafc;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Box */
+.register-box {
+    background: white;
+    padding: 45px;
+    border-radius: 16px;
+    width: 380px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.register-box:hover {
+    transform: translateY(-3px);
+}
+
+/* Inputs */
+.register-box input {
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    transition: 0.2s;
+}
+
+.register-box input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+/* Button */
+.register-box button {
+    border-radius: 10px;
+    padding: 12px;
+    font-weight: 600;
+    background: #2563eb;
+    border: none;
+    transition: 0.3s;
+}
+
+.register-box button:hover {
+    background: #1e40af;
+    transform: scale(1.02);
+}
+
+/* Link */
+.register-box a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-box a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Order</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <h2> FoodHub</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+
+            <li class="dropdown">
+                <a href="#" onclick="toggleMenu(event)">Explore ▾</a>
+                <ul class="dropdown-content" id="dropdownMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <h2 class="title">Place Your Order</h2>
+
+    <form onsubmit="return placeOrder()">
+
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="text" id="phone" placeholder="Phone (10 digits)" required>
+
+        <!-- MULTIPLE ITEMS -->
+        <div class="menu-list">
+            <label><input type="checkbox" value="Burger" data-price="120"> Burger (₹120)</label>
+            <input type="number" min="0" value="0" class="qty">
+
+            <label><input type="checkbox" value="Pizza" data-price="250"> Pizza (₹250)</label>
+            <input type="number" min="0" value="0" class="qty">
+
+            <label><input type="checkbox" value="Drink" data-price="60"> Drink (₹60)</label>
+            <input type="number" min="0" value="0" class="qty">
+        </div>
+
+        <button type="submit">Generate Bill</button>
+    </form>
+
+    <div id="bill"></div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

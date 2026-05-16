@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">SmartPortal</div>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="order.html">Order</a></li>
+
+            <li class="dropdown">
+                <a href="#">Services ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </li>
+
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <div class="order-box">
+        <h2>Order Food</h2>
+
+        <label><input type="checkbox" value="100" class="item"> Pizza - ₹100</label><br>
+        <label><input type="checkbox" value="80" class="item"> Burger - ₹80</label><br>
+        <label><input type="checkbox" value="50" class="item"> Cold Drink - ₹50</label><br><br>
+
+        <button onclick="generateBill()">Generate Bill</button>
+
+        <h3 id="total"></h3>
+
+        <h3>Feedback</h3>
+        <textarea placeholder="Write feedback"></textarea>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
